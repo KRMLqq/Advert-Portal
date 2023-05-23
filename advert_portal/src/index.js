@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './UserProfile';
+import App from './Advert';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
