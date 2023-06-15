@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 40px;
+    z-index: -1;
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+.mainInfoDiv {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 70%;
+    scrollbar-width: thin;
+    overflow-x: scroll;
+    margin-top: 50px;
+}
+
+.mainInfo {
+    height: 200px;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin: 3px;
+    background-color: rgb(27, 114, 243);
+    color: white;
+    box-shadow: 0px 1px 5px 0px lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon {
+    font-size: 75px;
+}
+
+.mainInfo span {
+    font-size: 25px;
+}
+
+.applyButton {
+    border: none;
+    width: 60%;
+    height: 60px;
+    border-radius: 20px 0px 0px 20px;
+    cursor: pointer;
+    background-color: rgb(27, 114, 243);
+    color: white;
+    font-size: 150%;
+    box-shadow: 0 5px 5px 4px lightgray;
+    transition: 0.7s;
+}
+
+.applyButtonDiv p {
+    width: 40%;
+    text-align: center;
+}
+
+.applyButton:hover {
+    background-color: white;
+    color: rgb(27, 114, 243);
+    border: solid 2px rgb(27, 114, 243);
+}
+
+.applyButtonDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    background-color: white;
+}
+
+.positionDesc {
+    text-align: center;
+    padding: 10px;
+    font-size: 120%;
+}
+
+.advertListsDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advertList {
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 3px 1px rgb(27, 114, 243);
+}
+
+.advertList:last-of-type {
+    margin-bottom: 100px;
+}
+
+.advertList>p {
+    text-align: center;
+    color: rgb(27, 114, 243);
+    font-size: large;
+}
+
+.advertList>ul {
+    list-style: circle;
+}
+
+.advertList>ul li {
+    padding: 10px;
+}
+
+.salaryHD {
+    display: none;
+}
+
+@media (min-width:1281px) {
+    .mainInfoDiv {
+        display: flex;
+    }
+    .mainInfo:hover {
+        background-color: rgb(253, 93, 1);
+        border: 1px solid rgb(27, 114, 243);
+        color: rgb(27, 114, 243);
+        transition: 0.6s;
+    }
+    .mainInfo {
+        width: 50%;
+    }
+    .advertList {
+        width: 80%;
+        height: 200px;
+    }
+    .advertList:last-of-type {
+        margin: 0;
+    }
+    .advertListsDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    .applyButtonDiv {
+        position: static;
+        justify-content: center;
+    }
+    .applyButtonDiv p {
+        display: none;
+    }
+    .applyButton {
+        border-radius: 20px;
+        margin: 20px 0;
+    }
+    .salaryHD {
+        display: block;
+        text-align: center;
+    }
+}

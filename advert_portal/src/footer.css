@@ -1,0 +1,8 @@
+.footerDiv {
+    width: 100%;
+    border-top: solid 1px rgb(27, 114, 243);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
